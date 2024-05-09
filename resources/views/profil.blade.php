@@ -125,11 +125,11 @@
             <div class="col-lg-8">
                 <div class="card">
                     <div class="card-body">
-                        <!-- Formularul pentru editarea profilului va fi plasat aici -->
+                       
                         <form action="{{ route('profil.update', $user->id) }}" method="POST">
                             @csrf
                             @method('PUT')
-                            
+
                             </div>
                             <h1>Editare profil</h1>
                             <form action="{{ route('profil.update', $user->id) }}" method="POST">
@@ -143,7 +143,7 @@
                                     <label for="email">Email:</label>
                                     <input type="email" name="email" class="form-control" value="{{ $user->email }}">
                                 </div>
-                                <!-- Alte câmpuri pentru editare -->
+
                                 <button type="submit" class="btn btn-primary">Actualizează profil</button>
                             </form>
                                     <div class="card-body">
