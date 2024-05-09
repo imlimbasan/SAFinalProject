@@ -125,11 +125,11 @@
             <div class="col-lg-8">
                 <div class="card">
                     <div class="card-body">
-                       
+
                         <form action="{{ route('profil.update', $user->id) }}" method="POST">
                             @csrf
                             @method('PUT')
-
+                            <div class="card-body">
                             </div>
                             <h1>Editare profil</h1>
                             <form action="{{ route('profil.update', $user->id) }}" method="POST">
@@ -145,6 +145,7 @@
                                 </div>
 
                                 <button type="submit" class="btn btn-primary">Actualizează profil</button>
+                            </div>
                             </form>
                                     <div class="card-body">
 
